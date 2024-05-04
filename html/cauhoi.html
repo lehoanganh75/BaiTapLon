@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Câu hỏi - Đồng Hồ Hoàng Anh</title>
+	<link rel="shortcut icon" href="../img/favicon.png" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style_cauhoi.css">
+	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<section class="myheader">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<a href="index.html" class="">
+						<img src="../img/logo.jpg" class="img-fluid" alt="Logo" style="width: 120px;">
+					</a>
+				</div>
+
+				<div class="col-md-4">
+					<div class="input-group">
+						<input type="search" class="form-control mt-4" placeholder="Tìm kiếm...">
+						<span class="input-group-text mt-4" id="basic-addon2"><i
+								class="fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="row mt-4">
+						<div class="col">
+							<div class="row">
+								<div class="col-md-3 ">
+									<div class="fs-3">
+										<a href="#" class="text-danger"><i class="fa-solid fa-phone"></i></a>
+									</div>
+								</div>
+								<div class="col-md-9">
+									Tư vấn hỗ trợ <br>
+									<strong class="text-danger">1900 1080</strong>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="fs-3">
+										<a href="login.html" class="text-danger" id="login_taikhoan"><i
+												class="fa-regular fa-circle-user"></i></a>
+									</div>
+								</div>
+								<div class="col-md-9">
+									Chào mừng!<br>
+									<strong><a id="loginLink" class="text-danger" style="text-decoration: none;">Đăng
+											nhập</a></strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 mt-4">
+					<div class="row">
+						<div class="col">
+							<a href="#" class="position-relative">
+								<span class="fs-2">
+									<i class="fa-regular fa-heart" style="color: black;"></i>
+								</span>
+								<span
+									class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+									99+
+								</span>
+							</a>
+						</div>
+						<div class="col">
+							<a href="#" class="position-relative">
+								<span class="fs-2">
+									<i class="fa-solid fa-cart-plus" style="color: black;"></i>
+								</span>
+							</a>
+						</div>
+						<div class="col">
+							<a href="thongtintaikhoan.html" class="position-relative">
+								<span class="fs-2">
+									<i class="fa-solid fa-circle-user" style="color: black;"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mymenu">
+		<div class="container bg-secondary">
+			<div class="row">
+				<div class="col-md-4 text-white py-3">
+					Danh mục sản phẩm
+				</div>
+				<div class="col-md-8">
+					<nav class="navbar navbar-expand-lg bg-secondary">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" aria-disabled="true" href="index.html">Trang chủ</a>
+									</li>
+									<li class="nav-item">
+										<a href="gioithieu.html" class="nav-link" aria-disabled="true">Giới thiệu</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button"
+											data-bs-toggle="dropdown" aria-expanded="false">
+											Sản phẩm
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#" onclick="thongBao()">Đồng hồ Rolex</a>
+											</li>
+											<li><a class="dropdown-item" href="#" onclick="thongBao()">Đồng hồ Blues</a>
+											</li>
+											<li><a class="dropdown-item" href="#" onclick="thongBao()">Đồng hồ Reds</a>
+											</li>
+											<li><a class="dropdown-item" href="#" onclick="thongBao()">Đồng hồ Goo</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item" onclick="thongBao()">
+										<a class="nav-link" href="#">Luxury</a>
+									</li>
+									<li class="nav-item">
+										<a href="cauhoi.html" class="nav-link" aria-disabled="true">Câu hỏi thường
+											gặp</a>
+									</li>
+									<li class="nav-item">
+										<a href="lienhe.html" class="nav-link" aria-disabled="true">Liên hệ</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<br>
+	<div class="content-2 justify-content-center align-items-center my-3">
+		<div class="row">
+			<div class="col">
+				<div class="links">
+					<ul>
+						<li><a href="index.html" title="Trang chủ">Trang chủ</a> /</li>
+						<li><a href="#" title="Giới thiệu"> Câu hỏi</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="description">
+			<h2>Câu hỏi thường gặp?</h2>
+		</div>
+
+		<div class="row my-5">
+			<div class="col-6">
+				<div class="desc">
+					<span class="txt-question"> &#9998 Tại sao có những chiếc đồng hồ rất mắc tiền? giá của đồng hồ phụ
+						thuộc vào những gì?</span>
+					<br><br>
+					Trả lời, vì họ có tiền. Đây là câu trả lời thực dụng nhất, đồng hồ càng mắc tiền thì đồng nghĩa với
+					địa vị xã hội của họ. Thường thì giá của đồng hồ phụ thuộc vào độ phủ sóng của thương hiệu đó, tính
+					năng, độ chính xác hay đơn giản là lượng kim loại quý, đá quý, kim cương để làm nó. Các hãng đồng hồ
+					ngày nay đang được trả tiền để làm cho đồng hồ ngày càng phức tạp hơn, nhiều chức năng hơn và điều
+					quan trọng đó là độ tinh xảo.
+					<br> <br>
+					<span class="txt-question">
+						&#9998 Chọn đồng hồ cơ hay đồng hồ Quartz (Pin)?
+						Dưới đây là đánh giá giữa đồng hồ cơ và Quartz.
+					</span>
+					<br> <br>
+					Nếu bạn là người muốn một chiếc đồng hồ có độ chính xác, mỏng, nhẹ, tiện lợi thì đồng hồ Quartz là
+					lựa chọn tuyệt vời. Hiện nay có 2 loại Pin đó là Pin thường và Pin sạc năng lượng mặt trời (Eco
+					drive)
+					<br> <br>
+					Nếu bạn là người yêu cái đẹp, thích sự tinh xảo mà ít quan tâm đến các yếu tố khác thì đồng hồ cơ sẽ
+					là sự lựa chọn tốt. Bạn sẽ sở hữu cỗ máy tinh xảo với những chi tiết cực kỳ tinh vi, các thiết kế lộ
+					máy phơi bày hết chi tiết nhỏ nhất. Tiếng kêu của nó vui tai làm sao.
+					<br> <br>
+					<span class="txt-question">
+						&#9998 Đường kính đồng hồ dành cho nam và nữ thường là bao nhiêu?
+					</span>
+					<br> <br>
+					Đường kính dành chon nam từ 38 đến 45.
+					Đường kính dành cho nữ từ 19 đến 39 thường là như vậy bởi khoảng thời gian từ 1-2 năm trở lại những
+					thiết kế dành cho nữ phá cách hơn tức đường kính lớn hơn trước, hiện nay một số thương hiệu đang làm
+					phải kể tới như Michael Kors, Guess…
+					<br> <br>
+					<span class="txt-question">
+						&#9998 Pin của đồng hồ Quartz sử dụng trong thời gian bao lâu?
+					</span>
+					<br><br>
+					Những chiếc đồng hồ sử dụng bộ máy Quartz (thạch anh) của Thụy Sỹ, Nhật Bản, Đức thường có thời
+					lượng PIN trung bình khoảng 2 - 3 năm, có một số loại đặc trủng thời lượng PIN lên đến 5 năm. Những
+					chiếc đồng hồ sử dụng bộ máy Quartz (thạch anh) của Trung Quốc có thời lượng PIN trung bình khoảng 1
+					- 1,5 năm. Tuy nhiên, hãy chú ý rằng, thời gian sử dụng của PIN được tính kể từ khi nhà sản xuất nạp
+					PIN vào đồng hồ chứ không phải từ khi người tiêu dùng mua để sử dụng, vì vậy có một số trường hợp
+					mới đeo được vài tháng đã hết PIN, trường hợp này, bạn sẽ được thay PIN mới miễn phí nếu đồng hồ còn
+					trong thời gian bảo hành.
+				</div>
+			</div>
+
+			<div class="col-6 text-center">
+				<img src="../img/footer/footer2.png" width="450" height="auto" alt="IUH">
+			</div>
+		</div>
+		<div class="container">
+			<div class="gird-ft-top">
+				<div class="item">
+					<a href="#" class="avt">
+						<img src="../img/chitietsanpham/tindung.png" width="50" height="51" alt="icon">
+					</a>
+					<div class="desc">
+						<h4>9999</h4>
+						Khách hàng tin dùng
+					</div>
+				</div>
+				<div class="item">
+					<a href="#" class="avt">
+						<img src="../img/chitietsanpham/duan.png" width="50" height="51" alt="icon">
+					</a>
+					<div class="desc">
+						<h4>1 tháng</h4>
+						Hoàn thành dự án website
+					</div>
+				</div>
+				<div class="item">
+					<a href="#" class="avt">
+						<img src="../img/chitietsanpham/phattrien.png" width="50" height="51" alt="icon">
+					</a>
+					<div class="desc">
+						<h4>Hơn 9999 quốc gia</h4>
+						Hợp tác & phát triển
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="footer bg-dark text-white py-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="list-menu" style="list-style: none;">
+							<h4>TRANG CHỦ CỦA TÔI</h4>
+							<li class="li_menu">
+								<a href="#" title="Trang chủ">Trang chủ</a>
+							</li>
+							<li class="li_menu">
+								<a href="login.html" title="Đăng nhập">Đăng nhập</a>
+							</li>
+							<li class="li_menu">
+								<a href="login.html" title="Đăng ký">Đăng ký</a>
+							</li>
+							<li class="li_menu">
+								<a href="giohang.html" title="Giỏ hàng">Giỏ hàng</a>
+							</li>
+							<li class="li_menu">
+								<a href="thongtintaikhoan.html" title="Tài khoản">Tài khoản</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="list-menu" style="list-style: none;">
+							<h4>GIỚI THIỆU</h4>
+							<li class="li_menu">
+								<a href="gioithieu.html" title="Giới thiệu">Giới thiệu</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<ul class="list-menu" style="list-style: none;">
+							<h4>CÂU HỎI THƯỜNG GẶP</h4>
+							<li class="li_menu">
+								<a href="cauhoi.html" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="list-menu" style="list-style: none;">
+							<h4>LIÊN HỆ</h4>
+							<li class="li_menu">
+								<a href="lienhe.html" title="Liên hệ">Liên hệ</a>
+							</li>
+							<li class="li_menu">
+								<a href="sitemap.html">Sitemap</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-6">
+						<h5>THIÊN ĐƯỜNG MUA SẮM WATCH STORE</h5>
+						<p class="m-0">Công ty cổ phần thương mại Hoang Anh Watch</p>
+						<p class="m-0">Chứng nhận ĐKKD số: 113</p>
+						<p class="m-0">Địa chỉ: Nguyễn Văn Bảo, Gò Vấp, TP.HCM</p>
+						<p class="m-0">Điện thoại: 0123456789 - Email: hoanganh@gmail.com</p>
+					</div>
+					<div class="col-md-6 contact">
+						<div class="row">
+							<div class="col">
+								<a href="index.html"><img src="../img/logo.jpg" alt="logo"
+										style="width: 180px;"></a><br>
+							</div>
+							<div class="col">
+								<a href="lienhe.html"><i class="fa-solid fa-location-dot fs-5 mb-3"></i></a>Location
+								<br>
+								<a href="#"><i class="fa-solid fa-envelope fs-5 mb-3"></i></a>Email <br>
+								<a href="#"><i class="fa-solid fa-phone fs-5 mb-3"></i></a>Phone <br>
+								<a href="#"><i class="fa-solid fa-clock fs-5"></i></a>Time <br>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</section>
+		<script>
+			if (localStorage.getItem('username')) {
+				var username = localStorage.getItem('username');
+				var spanElement = document.getElementById('loginLink');
+				spanElement.innerText = username;
+				$("#login_taikhoan").click(function (e) {
+					e.preventDefault();
+					window.location.href = 'thongtintaikhoan.html';
+				});
+			}
+		</script>
+</body>
+
+</html>

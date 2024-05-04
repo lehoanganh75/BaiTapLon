@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <title>Đăng nhập - Đồng Hồ Hoàng Anh</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style_login.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form class="sign-in-form" onsubmit="signin()">
+                <h2 class="title">Đăng nhập</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="taikhoan" placeholder="Tài khoản">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="matkhau" placeholder="Mật khẩu">
+                </div>
+                <input type="submit" id="dangnhap" value="Đăng nhập" class="btn">
+                <p class="social-text">Đăng nhập với</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Bạn chưa có tài khoản? <a id="sign-up-btn2">Đăng ký</a></p>
+            </form>
+            <form class="sign-up-form" onsubmit="signup()">
+                <h2 class="title">Đăng ký</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Tài khoản">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="email" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Mật khẩu">
+                </div>
+                <input type="submit" id="dangky" value="Đăng ký" class="btn">
+                <p class="social-text">Đăng ký với</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Bạn đã có tài khoản?<a href="#" id="sign-in-btn2">Đăng nhập</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Bạn đã là thành viên của chúng tôi?</h3>
+                    <p>Hãy nhấn đăng nhập để đăng nhập vào cửa hàng của chúng tôi!</p>
+                    <button class="btn" id="sign-in-btn">Đăng nhập</button>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Bạn chưa là thành viên của cửa hàng của chúng tôi?</h3>
+                    <p>Đừng lo vì chỉ mất vài phút đăng ký bạn sẽ trở thành thành viên VIP của chúng tôi!</p>
+                    <button class="btn" id="sign-up-btn">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/app.js"></script>
+    <script>
+        var usernameValidated = false;
+        var passwordValidated = false;
+        var emailValidated = false;
+
+        $("#username").blur(function (e) {
+            e.preventDefault();
+            if (!usernameValidated) {
+                var tendangnhap = $("#username").val();
+                var reg_tendangnhap = /^[a-zA-Z]*[0-9]*[!@#$%^&*()]*[^\s]$/;
+                if (!reg_tendangnhap.test(tendangnhap)) {
+                    alert("Tên đăng nhập bắt đầu là ký tự, có hoặc không có ký tự số, ký tự đặc biệt và không được có khoảng trắng");
+                    usernameValidated = true;
+                }
+            }
+        });
+
+        $("#password").blur(function (e) {
+            e.preventDefault();
+            if (!passwordValidated) {
+                var matkhaudangnhap = $("#password").val();
+                var reg_mk = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*()]).{8,}$/;
+                if (!reg_mk.test(matkhaudangnhap)) {
+                    alert("Mật khẩu từ 8 ký tự trở lên, có ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt");
+                    passwordValidated = true;
+                }
+            }
+        });
+
+        $("#email").blur(function () {
+            if (!emailValidated) {
+                var email = $("#email").val();
+                var reg_email = /^\w+[!@#$%^&*()]*(@gmail.com)$/;
+                if (!reg_email.test(email)) {
+                    alert("Vui lòng nhập đúng địa chỉ email");
+                    emailValidated = true;
+                }
+            }
+        });
+
+        function signup() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            localStorage.setItem("username", username);
+            localStorage.setItem("email", email);
+            localStorage.setItem("password", password);
+            alert('Đăng ký thành công!');
+        }
+
+        function signin() {
+            event.preventDefault();
+            var username = document.getElementById('taikhoan').value;
+            var password = document.getElementById('matkhau').value;
+            var user = localStorage.getItem('username');
+            var pass = localStorage.getItem('password');
+
+            if (!user || username == "" || password == "") {
+                alert('Tài khoản hoặc mật khẩu không chính xác!');
+            } else {
+                if (username == user && password == pass) {
+                    alert('Đăng nhập thành công!');
+                    window.location.href = 'index.html';
+                } else {
+                    alert('Đăng nhập thất bại');
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

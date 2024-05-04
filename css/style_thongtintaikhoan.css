@@ -1,0 +1,426 @@
+.li_menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login a:hover {
+    color: red;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.nav-item a:hover {
+    color: red;
+}
+
+.dropdown-menu a:hover {
+    color: red;
+}
+
+.catetory-icon h5 {
+    text-align: center;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+}
+
+.myheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #f6f6ea;
+}
+
+.mymenu {
+    margin-top: 105px;
+}
+
+.banner .row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.description h2 {
+    font-size: 40px;
+    color: #d62430;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.banner .description .desc {
+    margin-bottom: 30px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.lienhe {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.footer-top {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.gird-ft-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 30%;
+}
+
+.avt img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.desc {
+    text-align: center;
+}
+
+.desc p {
+    margin-bottom: 5px;
+}
+
+.desc > a {
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+}
+
+.desc a:hover {
+    text-decoration: underline;
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.links ul li:nth-child(2) a {
+    color: red;
+    margin-left: 5px;
+}
+
+.col-md-4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.li_menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login a:hover {
+    color: red;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.nav-item a:hover {
+    color: red;
+}
+
+.dropdown-menu a:hover {
+    color: red;
+}
+
+.catetory-icon h5 {
+    text-align: center;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+}
+
+.myheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #f6f6ea;
+}
+
+.mymenu {
+    margin-top: 105px;
+}
+
+.banner .row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.description h2 {
+    font-size: 40px;
+    color: #d62430;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.banner .description .desc {
+    margin-bottom: 30px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.lienhe {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.footer-top {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.gird-ft-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 30%;
+}
+
+.avt img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.desc {
+    text-align: center;
+}
+
+.desc p {
+    margin-bottom: 5px;
+}
+
+.desc > a {
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+}
+
+.desc a:hover {
+    text-decoration: underline;
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.links ul li:nth-child(2) a {
+    color: red;
+    margin-left: 5px;
+}
+
+.col-md-4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.mycontent {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.infoUser {
+    border: 1px solid #ccc;
+    width: 1220px; 
+    background-color: #f9f9f9;
+}
+
+.infoUser table {
+    width: 100%;
+}
+
+.infoUser th {
+    background-color: #eee;
+}
+
+.infoUser td {
+    padding: 5px;
+}
+
+.infoUser input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.infoUser i {
+    cursor: pointer;
+    color: blue;
+}
+
+.infoUser hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefefe;
+    margin: 50% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

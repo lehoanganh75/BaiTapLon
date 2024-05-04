@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản - Đồng Hồ Hoàng Anh</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style_thongtintaikhoan.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="myheader">
+        <div class="container-fluid my-2">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <a href="index.html" class="">
+                        <img src="../img/logo.jpg" class="img-fluid" alt="Logo" style="width: 120px;">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="search" class="form-control mt-4" placeholder="Tìm kiếm...">
+                        <span class="input-group-text mt-4" id="basic-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-md-3 ">
+                                    <div class="fs-3">
+                                        <a href="#" class="text-danger"><i class="fa-solid fa-phone"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    Tư vấn hỗ trợ <br>
+                                    <strong class="text-danger">1900 1080</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="fs-3">
+                                        <a href="login.html" class="text-danger" id="login_taikhoan"><i
+                                                class="fa-regular fa-circle-user"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    Chào mừng!<br>
+                                    <strong><a id="loginLink" class="text-danger" style="text-decoration: none;">Đăng
+                                            nhập</a></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 mt-4">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="position-relative">
+                                <span class="fs-2">
+                                    <i class="fa-regular fa-heart" style="color: black;"></i>
+                                </span>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="giohang.html" class="position-relative">
+                                <span class="fs-2">
+                                    <i class="fa-solid fa-cart-plus" style="color: black;"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="position-relative">
+                                <span class="fs-2">
+                                    <i class="fa-solid fa-circle-user" style="color: black;"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mymenu">
+        <div class="container bg-secondary">
+            <div class="row">
+                <div class="col-md-4 text-white py-3">
+                    Danh mục sản phẩm
+                </div>
+                <div class="col-md-8">
+                    <nav class="navbar navbar-expand-lg bg-secondary">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-disabled="true" href="index.html">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="gioithieu.html" class="nav-link" aria-disabled="true">Giới thiệu</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Sản phẩm
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#" onclick="thongBao()">Đồng hồ Rolex</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#" onclick="thongBao()">Đồng hồ Blues</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#" onclick="thongBao()">Đồng hồ Reds</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#" onclick="thongBao()">Đồng hồ Goo</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item" onclick="thongBao()">
+                                        <a class="nav-link" href="#">Luxury</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="cauhoi.html" class="nav-link" aria-disabled="true">Câu hỏi thường
+                                            gặp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="lienhe.html" class="nav-link" aria-disabled="true">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mycontent my-3">
+        <div class="infor">
+            <div class="infoUser">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th colspan="3">THÔNG TIN KHÁCH HÀNG</th>
+                        </tr>
+                        <tr>
+                            <td>Tài khoản: </td>
+                            <td> <input type="text" id="user" readonly disabled> </td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td> <input type="text" id="email" readonly> </td>
+                        </tr>
+                        <tr>
+                            <td>Mật khẩu: </td>
+                            <td> <input type="text" id="password" readonly> </td>
+                            <td> <i class="fa fa-pencil" id="pencil"></i> </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" style="padding:5px; border-top: 2px solid #ccc;"></td>
+                        </tr>
+                        <tr>
+                            <td>Tổng tiền đã mua: </td>
+                            <td> <input type="text" id="tongTien" readonly> </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Số lượng sản phẩm đã mua: </td>
+                            <td> <input type="text" id="soLuong" readonly> </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="close">
+                <input type="submit" id="dangxuat" value="Đăng xuất" class="btn btn-danger form-control mt-4">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal mt-6" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Đổi mật khẩu</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-control">
+                        <div class="input-field my-3">
+                            <div class="row">
+                                <div class="col-5">
+                                    <label>Mật khẩu mới:</label>
+                                </div>
+                                <div class="col-7">
+                                    <input type="text" id="newPassword">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-field my-3">
+                            <div class="row">
+                                <div class="col-5">
+                                    <label>Xác nhận mật khẩu:</label>
+                                </div>
+
+                                <div class="col-7">
+                                    <input type="text" id="confirmPassword">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success form-control" id="changePasswordForm">Lưu</button>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-menu" style="list-style: none;">
+                        <h4>TRANG CHỦ CỦA TÔI</h4>
+                        <li class="li_menu">
+                            <a href="index.html" title="Trang chủ">Trang chủ</a>
+                        </li>
+                        <li class="li_menu">
+                            <a href="login.html" title="Đăng nhập">Đăng nhập</a>
+                        </li>
+                        <li class="li_menu">
+                            <a href="login.html" title="Đăng ký">Đăng ký</a>
+                        </li>
+                        <li class="li_menu">
+                            <a href="giohang.html" title="Giỏ hàng">Giỏ hàng</a>
+                        </li>
+                        <li class="li_menu">
+                            <a href="#" title="Tài khoản">Tài khoản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-menu" style="list-style: none;">
+                        <h4>GIỚI THIỆU</h4>
+                        <li class="li_menu">
+                            <a href="gioithieu.html" title="Giới thiệu">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="list-menu" style="list-style: none;">
+                        <h4>CÂU HỎI THƯỜNG GẶP</h4>
+                        <li class="li_menu">
+                            <a href="cauhoi.html" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-menu" style="list-style: none;">
+                        <h4>LIÊN HỆ</h4>
+                        <li class="li_menu">
+                            <a href="lienhe.html" title="Liên hệ">Liên hệ</a>
+                        </li>
+                        <li class="li_menu">
+                            <a href="sitemap.html">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>THIÊN ĐƯỜNG MUA SẮM WATCH STORE</h5>
+                    <p class="m-0">Công ty cổ phần thương mại Hoang Anh Watch</p>
+                    <p class="m-0">Chứng nhận ĐKKD số: 113</p>
+                    <p class="m-0">Địa chỉ: Nguyễn Văn Bảo, Gò Vấp, TP.HCM</p>
+                    <p class="m-0">Điện thoại: 0123456789 - Email: hoanganh@gmail.com</p>
+                </div>
+                <div class="col-md-6 contact">
+                    <div class="row">
+                        <div class="col">
+                            <a href="index.html"><img src="../img/logo.jpg" alt="logo" style="width: 180px;"></a><br>
+                        </div>
+                        <div class="col">
+                            <a href="lienhe.html"><i class="fa-solid fa-location-dot fs-5 mb-3"></i></a>Location <br>
+                            <a href="#"><i class="fa-solid fa-envelope fs-5 mb-3"></i></a>Email <br>
+                            <a href="#"><i class="fa-solid fa-phone fs-5 mb-3"></i></a>Phone <br>
+                            <a href="#"><i class="fa-solid fa-clock fs-5"></i></a>Time <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function () {
+            var username = localStorage.getItem('username');
+            var email = localStorage.getItem('email');
+            var password = localStorage.getItem('password');
+
+            $('#user').val(username);
+            $('#email').val(email);
+            $('#password').val(password);
+
+            document.getElementById("dangxuat").addEventListener("click", function () {
+                localStorage.clear();
+                window.location.href = 'index.html';
+            });
+
+            document.getElementById('pencil').addEventListener('click', function () {
+                document.getElementById('myModal').style.display = 'block';
+            });
+
+            $('#changePasswordForm').click(function (event) {
+                event.preventDefault();
+                let newPassword = $('#newPassword').val();
+                localStorage.setItem('password', newPassword);
+                document.getElementById('myModal').style.display = 'none';
+            });
+
+            $("#newPassword").blur(function (e) {
+                e.preventDefault();
+                let matkhaudangnhap = $("#newPassword").val();
+                let reg_mk = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*()]).{8,}$/;
+
+                if (!reg_mk.test(matkhaudangnhap)) {
+                    alert("Mật khẩu từ 8 ký tự trở lên, có ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt");
+                }
+
+            });
+
+            $("#confirmPassword").blur(function () {
+                let matkhaudangnhap = $("#confirmPassword").val();
+                let reg_mk = new RegExp($("#newPassword").val());
+                if (!reg_mk.test($(this).val())) {
+                    alert("Mật khẩu không trùng khớp");
+                }
+            });
+
+        });
+
+        if (localStorage.getItem('username')) {
+                var username = localStorage.getItem('username');
+                var spanElement = document.getElementById('loginLink');
+                spanElement.innerText = username;
+                $("#login_taikhoan").click(function (e) {
+                    e.preventDefault();
+                    window.location.href = 'thongtintaikhoan.html';
+                });
+            }
+    </script>
+</body>
+
+</html>

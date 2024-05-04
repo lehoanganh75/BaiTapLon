@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trang chủ - Đồng Hồ Hoàng Anh</title>
+	<link rel="shortcut icon" href="../img/favicon.png" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style_index.css">
+	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<section class="myheader">
+		<div class="container py-2">
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<a href="index.html" class="">
+						<img src="../img/logo.jpg" class="img-fluid" alt="Logo" style="width: 120px;">
+					</a>
+				</div>
+
+				<div class="col-md-4">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control mt-4" placeholder="Tìm kiếm...">
+						<span class="input-group-text mt-4" id="search"><i
+								class="fa-solid fa-magnifying-glass"></i></span>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="row mt-4">
+						<div class="col">
+							<div class="row">
+								<div class="col-md-3 ">
+									<div class="fs-3">
+										<a href="lienhe.html" class="text-danger"><i class="fa-solid fa-phone"></i></a>
+									</div>
+								</div>
+								<div class="col-md-9">
+									Tư vấn hỗ trợ <br>
+									<strong class="text-danger">1900 1080</strong>
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="fs-3">
+										<a href="login.html" class="text-danger" id="login_taikhoan"><i
+												class="fa-regular fa-circle-user"></i></a>
+									</div>
+								</div>
+								<div class="col-md-9" id="loginText">
+									<span id="welcomeText">Chào mừng!</span><br>
+									<strong><span id="loginLink" class="text-danger" style="text-decoration: none;">Đăng
+											nhập</span></strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 mt-4">
+					<div class="row">
+						<div class="col">
+							<a href="#" class="position-relative">
+								<span class="fs-2">
+									<i class="fa-regular fa-heart" style="color: black;"></i>
+								</span>
+								<span
+									class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+									99+
+								</span>
+							</a>
+						</div>
+						<div class="col">
+							<a href="giohang.html" class="position-relative">
+								<span class="fs-2">
+									<i class="fa-solid fa-cart-plus" style="color: black;"></i>
+								</span>
+							</a>
+						</div>
+						<div class="col">
+							<a href="thongtintaikhoan.html" class="position-relative">
+								<span class="fs-2">
+									<i class="fa-solid fa-circle-user" style="color: black;"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mymenu">
+		<div class="container bg-secondary">
+			<div class="row">
+				<div class="col-md-4 text-white py-3">
+					Danh mục sản phẩm
+				</div>
+				<div class="col-md-8">
+					<nav class="navbar navbar-expand-lg bg-secondary">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" aria-disabled="true" href="index.html">Trang chủ</a>
+									</li>
+									<li class="nav-item">
+										<a href="gioithieu.html" class="nav-link" aria-disabled="true">Giới thiệu</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button"
+											data-bs-toggle="dropdown" aria-expanded="false">
+											Sản phẩm
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồng
+													hồ Rolex</a>
+											</li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồng
+													hồ Blues</a>
+											</li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồng
+													hồ Reds</a>
+											</li>
+											<li><a class="dropdown-item" href="#" onclick="scrollToProductTitle()">Đồng
+													hồ Goo</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item" onclick="scrollToProductTitle()">
+										<a class="nav-link" href="luxury.html">Luxury</a>
+									</li>
+									<li class="nav-item">
+										<a href="cauhoi.html" class="nav-link" aria-disabled="true">Câu hỏi thường
+											gặp</a>
+									</li>
+									<li class="nav-item">
+										<a href="lienhe.html" class="nav-link" aria-disabled="true">Liên hệ</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mymaincontent my-3">
+		<div class="container">
+			<div class="slider mb-3">
+				<div id="carouselExampleCaptions" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+							class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="../img/banners/banner1.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Mang đến cho bạn phong cách mới với những mẫu đồng hồ đẳng cấp</h5>
+								<p>Khám phá ngay những sản phẩm chất lượng và độc đáo từ các thương hiệu hàng đầu thế
+									giới.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="../img/banners/banner2.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Thời gian là vàng, hãy chọn cho mình một chiếc đồng hồ phản ánh phong cách cá nhân
+								</h5>
+								<p>Chúng tôi tự hào mang đến cho bạn những lựa chọn đa dạng, phù hợp với mọi dịp.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="../img/banners/banner3.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Thể hiện phong cách đẳng cấp với sự lựa chọn hàng đầu từ cửa hàng chúng tôi</h5>
+								<p>Đến và trải nghiệm không gian mua sắm đẳng cấp cùng những mẫu đồng hồ xuất sắc.</p>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<div class="cate-list mb-3">
+					<div class="row">
+						<div class="col-3">
+							<div class="col-inner">
+								<div class="box box-text-bottom">
+									<div class="box-image">
+										<a onclick="scrollToProductTitle()">
+											<div class="image-zoom image-cover">
+												<img width="310" height="150"
+													src="../img/chitietsanpham/donghonambanchay.png"
+													class="attachment- size- entered pmloaded lazy-load-active"
+													alt="Những mẫu đồng hồ cao cấp đang bán chạy dành cho nam"
+													decoding="async" data-ll-status="loaded">
+											</div>
+										</a>
+									</div>
+									<div class="box-text text-center is-small">
+										<div class="box-text-inner">
+											<p>ĐỒNG HỒ NAM HOT</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="col-inner">
+								<div class="box box-text-bottom">
+									<div class="box-image">
+										<a onclick="scrollToProductTitle2()">
+											<div class="image-zoom image-cover">
+												<img width="310" height="150"
+													src="../img/chitietsanpham/donghonubanchay.png"
+													class="attachment- size- entered pmloaded lazy-load-active"
+													alt="Những mẫu đồng hồ cao cấp đang bán chạy dành cho nam"
+													decoding="async" data-ll-status="loaded">
+											</div>
+										</a>
+									</div>
+									<div class="box-text text-center is-small">
+										<div class="box-text-inner">
+											<p>ĐỒNG HỒ NỮ HOT</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="col-inner">
+								<div class="box box-text-bottom">
+									<div class="box-image">
+										<a href="#" onclick="scrollToProductTitle()">
+											<div class="image-zoom image-cover">
+												<img width="310" height="150"
+													src="../img/chitietsanpham/donghomoive.png"
+													class="attachment- size- entered pmloaded lazy-load-active"
+													alt="Những mẫu đồng hồ cao cấp đang bán chạy dành cho nam"
+													decoding="async" data-ll-status="loaded">
+											</div>
+										</a>
+									</div>
+									<div class="box-text text-center is-small">
+										<div class="box-text-inner">
+											<p>ĐỒNG HỒ HOT</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="col-inner">
+								<div class="box box-text-bottom">
+									<div class="box-image">
+										<a href="#" onclick="scrollToProductTitle()">
+											<div class="image-zoom image-cover">
+												<img width="310" height="150" src="../img/chitietsanpham/maumoi.png"
+													class="attachment- size- entered pmloaded lazy-load-active"
+													alt="Những mẫu đồng hồ cao cấp đang bán chạy dành cho nam"
+													decoding="async" data-ll-status="loaded">
+											</div>
+										</a>
+									</div>
+									<div class="box-text text-center is-small">
+										<div class="box-text-inner">
+											<p>ĐỒNG HỒ MỚI</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-list mb-3">
+					<div class="product_title border-bottom" id="productTitle">
+						<strong class="bg-danger text-white px-2">ĐỒNG HỒ NAM</strong>
+					</div>
+					<div class="product_list-s py-3" id="listProduct_nam">
+						
+					</div>
+				</div>
+				<div class="product-list mb-3">
+					<div class="product_title border-bottom" id="productlist2">
+						<strong class="bg-danger text-white px-2">ĐỒNG HỒ NỮ</strong>
+					</div>
+					<div class="product_list-s py-3" id="listProduct_nu">
+
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="footer bg-dark text-white py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="list-menu" style="list-style: none;">
+						<h4>TRANG CHỦ CỦA TÔI</h4>
+						<li class="li_menu">
+							<a href="#" title="Trang chủ">Trang chủ</a>
+						</li>
+						<li class="li_menu">
+							<a href="login.html" title="Đăng nhập">Đăng nhập</a>
+						</li>
+						<li class="li_menu">
+							<a href="login.html" title="Đăng ký">Đăng ký</a>
+						</li>
+						<li class="li_menu">
+							<a href="giohang.html" title="Giỏ hàng">Giỏ hàng</a>
+						</li>
+						<li class="li_menu">
+							<a href="thongtintaikhoan.html" title="Tài khoản">Tài khoản</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-menu" style="list-style: none;">
+						<h4>GIỚI THIỆU</h4>
+						<li class="li_menu">
+							<a href="gioithieu.html" title="Giới thiệu">Giới thiệu</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-3">
+					<ul class="list-menu" style="list-style: none;">
+						<h4>CÂU HỎI THƯỜNG GẶP</h4>
+						<li class="li_menu">
+							<a href="cauhoi.html" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-menu" style="list-style: none;">
+						<h4>LIÊN HỆ</h4>
+						<li class="li_menu">
+							<a href="lienhe.html" title="Liên hệ">Liên hệ</a>
+						</li>
+						<li class="li_menu">
+							<a href="sitemap.html">Sitemap</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-6">
+					<h5>THIÊN ĐƯỜNG MUA SẮM WATCH STORE</h5>
+					<p class="m-0">Công ty cổ phần thương mại Hoang Anh Watch</p>
+					<p class="m-0">Chứng nhận ĐKKD số: 113</p>
+					<p class="m-0">Địa chỉ: Nguyễn Văn Bảo, Gò Vấp, TP.HCM</p>
+					<p class="m-0">Điện thoại: 0123456789 - Email: hoanganh@gmail.com</p>
+				</div>
+				<div class="col-md-6 contact">
+					<div class="row">
+						<div class="col">
+							<a href="sitemap.html"><img src="../img/footer/sitemap.png" alt="sitemap" style="width: 280px;"></a><br>
+						</div>
+						<div class="col">
+							<a href="lienhe.html"><i class="fa-solid fa-location-dot fs-5 mb-3"></i></a>Location <br>
+							<a href="#"><i class="fa-solid fa-envelope fs-5 mb-3"></i></a>Email <br>
+							<a href="#"><i class="fa-solid fa-phone fs-5 mb-3"></i></a>Phone <br>
+							<a href="#"><i class="fa-solid fa-clock fs-5"></i></a>Time <br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+		</div>
+	</section>
+
+	<script>
+		function scrollToProductTitle() {
+			var productTitle = document.getElementById('productTitle');
+			productTitle.scrollIntoView({ behavior: 'smooth' });
+		}
+		function scrollToProductTitle2() {
+			var productTitle = document.getElementById('productlist2');
+			productTitle.scrollIntoView({ behavior: 'smooth' });
+		}
+		if (localStorage.getItem('username')) {
+			var username = localStorage.getItem('username');
+			var spanElement = document.getElementById('loginLink');
+			spanElement.innerText = username;
+			$("#login_taikhoan").click(function (e) {
+				e.preventDefault();
+                window.location.href = 'thongtintaikhoan.html';
+            });
+		}
+
+
+	</script>
+	<script src="../js/index.js"></script>
+</body>
+
+</html>

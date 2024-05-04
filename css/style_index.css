@@ -1,0 +1,104 @@
+.li_menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+.login a{
+    text-decoration: none;
+    color: #fff;
+}
+.login a:hover{
+    color: red;
+}
+
+.nav-link{
+    cursor: pointer;
+    color: #fff;
+    margin-left: 20px;
+}
+.nav-item a:hover{
+    color: red;
+}
+.dropdown-menu a:hover{
+    color: red;
+}
+
+.catetory-icon h5{
+    text-align: center;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+}
+
+.myheader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #f6f6ea;
+}
+
+.mymenu{
+    margin-top: 105px;
+}
+
+.product_list-s{
+    overflow: hidden;
+}
+.product_list-s img{
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.product_list-s img:hover{
+    transform: scale(1.1);
+}
+
+.box-image {
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-zoom {
+    transition: transform 0.6s ease;
+}
+
+.image-zoom:hover {
+    transform: scale(1.1);
+}
+
+.box-text-inner{
+    margin-top: 5px;
+}
+
+/* .product-small .box-image .hover-image {
+    display: none;
+}
+
+.product-small .box-image:hover .default-image {
+    display: none;
+}
+
+.product-small .box-image:hover .hover-image {
+    display: block;
+} */
+.product-small .box-text-products .name a {
+    color: #666;
+    text-decoration: none;
+}
+
+.col-md-4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
